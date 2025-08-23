@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useCartStore } from "../../store/cartStore";
 import CartItem from "./CartItem";
-import CheckoutForm from "./CheckoutForm";
+import CheckoutForm from "./CheckOutForm";
 import { motion } from "framer-motion";
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
 
