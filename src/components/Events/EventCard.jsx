@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function EventCard({ event }) {
@@ -7,6 +7,18 @@ export default function EventCard({ event }) {
   const imageUrl =
     event.image ||
     "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=80";
+
+  // Lock scroll when modal is open
+  useEffect(() => {
+    if (quickView) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto"; // reset on unmount
+    };
+  }, [quickView]);
 
   // Animation variants
   const overlayVariants = {
@@ -85,7 +97,7 @@ export default function EventCard({ event }) {
               initial="hidden"
               animate="visible"
               exit="exit"
-              className="bg-gray-900 text-gray-100 rounded-3xl overflow-hidden max-w-2xl w-full shadow-2xl border border-yellow-400/30"
+              className="bg-gray-900 text-gray-100 rounded-3xl overflow-hidden max-w-2xl w-full shadow-2xl border border-yellow-400/30 relative"
               onClick={(e) => e.stopPropagation()}
             >
               <button

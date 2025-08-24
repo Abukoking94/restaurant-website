@@ -67,7 +67,7 @@ export default function Reservation() {
     <ScrollReveal>
       <section className="py-16  px-6 relative overflow-hidden rounded-3xl shadow-xl text-gray-100">
         {/* Animated gradient background */}
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-800 via-indigo-900 to-pink-900 animate-gradient-x opacity-90 rounded-3xl"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 via-indigo-900 to-yellow-800 animate-gradient-x opacity-90 rounded-3xl"></div>
         <div className="absolute inset-0 bg-black/60 rounded-3xl"></div>
 
         <div className="max-w-4xl mx-auto text-center space-y-6 relative z-10">
@@ -95,7 +95,7 @@ export default function Reservation() {
                   },
                 },
               }}
-              className="text-3xl md:text-4xl font-bold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400"
+              className="text-3xl md:text-4xl font-bold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-yellow-600 to-indigo-400"
             >
               Reserve Your Table
             </motion.h2>
@@ -199,7 +199,7 @@ export default function Reservation() {
                 type="submit"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-gradient-to-r from-yellow-700 via-purple-400 to-indigo-500 text-white px-6 py-3 rounded-xl font-semibold hover:brightness-110 transition"
+                className="bg-gradient-to-r from-yellow-700 via-yellow-600 to-yellow-600 text-white px-6 py-3 rounded-xl font-semibold hover:brightness-110 transition"
               >
                 Book Now
               </motion.button>

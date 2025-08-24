@@ -114,7 +114,7 @@ export default function ReservationConfirmation({ formData, onClose }) {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7 }}
-            className="mt-6 w-full bg-emerald-500 text-gray-900 py-2 rounded-lg hover:bg-emerald-600 shadow-lg font-semibold transition-all"
+            className="mt-6 w-full bg-yellow-500 text-gray-900 py-2 rounded-lg hover:bg-emerald-600 shadow-lg font-semibold transition-all"
           >
             Close
           </motion.button>

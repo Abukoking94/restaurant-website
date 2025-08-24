@@ -31,7 +31,7 @@ export default function Reservations() {
         initial={{ y: -30, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
-        className="text-4xl md:text-5xl font-bold text-center mb-8 inline-block bg-gradient-to-r from-emerald-400 via-yellow-400 to-amber-400 bg-clip-text text-transparent animate-[shimmer_2s_infinite] tracking-wide"
+        className="text-4xl md:text-5xl font-bold text-center mb-8 inline-block bg-gradient-to-r from-black/20 via-yellow-400 to-black/10 bg-clip-text text-transparent animate-[shimmer_2s_infinite] tracking-wide"
       >
         Make a Reservation
       </motion.h1>

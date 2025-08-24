@@ -23,7 +23,7 @@ export default function AboutUs() {
             <p className="text-lg text-gray-300 leading-relaxed">
               Welcome to{" "}
               <span className="text-emerald-400 font-semibold">
-                Delicious Bites
+                Golden Eats
               </span>
               ! We blend{" "}
               <span className="text-yellow-400">authentic recipes</span>,

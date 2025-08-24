@@ -74,25 +74,25 @@ export default function Footer() {
           <div className="flex gap-4 mt-2">
             <a
               href="#"
-              className="p-2 bg-yellow-500 rounded-full hover:scale-110 transition transform text-black"
+              className="p-2 bg-yellow-500 rounded-full hover:scale-110 hover:bg-blue-500 hover:text-amber-50 transition transform text-black"
             >
               <FaFacebookF />
             </a>
             <a
               href="#"
-              className="p-2 bg-yellow-500 rounded-full hover:scale-110 transition transform text-black"
+              className="p-2 bg-yellow-500 rounded-full hover:scale-110 hover:text-blue-500 hover:bg-amber-50  transition transform text-black"
             >
               <FaTwitter />
             </a>
             <a
               href="#"
-              className="p-2 bg-yellow-500 rounded-full hover:scale-110 transition transform text-black"
+              className="p-2 bg-yellow-500 rounded-full hover:scale-110 hover:bg-pink-500 hover:text-amber-50  transition transform text-black"
             >
               <FaInstagram />
             </a>
             <a
               href="#"
-              className="p-2 bg-yellow-500 rounded-full hover:scale-110 transition transform text-black"
+              className="p-2 bg-yellow-500 rounded-full hover:scale-110 hover:bg-blue-500 hover:text-amber-50 transition transform text-black"
             >
               <FaLinkedinIn />
             </a>

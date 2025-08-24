@@ -73,7 +73,7 @@ export default function HeroSection() {
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
-            className="text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-lg"
+            className="text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-lg "
           >
             🍽️ Welcome to Golden Eats
           </motion.h1>

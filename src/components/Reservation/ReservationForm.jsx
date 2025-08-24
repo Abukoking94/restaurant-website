@@ -79,7 +79,7 @@ export default function ReservationForm() {
                 min={field.min}
                 value={formData[field.name]}
                 onChange={handleChange}
-                className="border border-gray-600 rounded-3xl p-3 bg-gray-900 text-gray-100 focus:ring-emerald-400 focus:border-emerald-400 focus:outline-none"
+                className="border border-gray-600 rounded-3xl p-3 bg-gray-900 text-gray-100 focus:ring-yellow-400 focus:border-none focus:outline-none"
               />
               {errors[field.name] && (
                 <span className="text-red-500 text-sm mt-1">
@@ -96,15 +96,15 @@ export default function ReservationForm() {
               value={formData.message}
               onChange={handleChange}
               rows="3"
-              className="border border-gray-600 rounded-2xl p-3 bg-gray-900 text-gray-100 focus:ring-emerald-400 focus:border-emerald-400 focus:outline-none"
+              className="border border-gray-600 rounded-2xl p-3 bg-gray-900 text-gray-100 focus:ring-emerald-400 focus:border-yellow-400 focus:outline-none"
             />
           </div>
 
           <div className="md:col-span-2 flex justify-center mt-4">
             <button
               type="submit"
-              className="text-gray-700 py-3 px-8 rounded-4xl bg-gradient-to-r from-emerald-400 via-yellow-400 to-amber-300
-             hover:from-emerald-500 hover:via-yellow-500 hover:to-amber-400
+              className="text-gray-700 py-3 px-8 rounded-4xl bg-gradient-to-r from-yellow-400 via-yellow-500 to-amber-300
+             hover:from-yellow-500 hover:via-yellow-500 hover:scale-105 hover:to-amber-500
              shadow-lg font-semibold transition-all"
             >
               Reserve Table

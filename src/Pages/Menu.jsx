@@ -1,4 +1,3 @@
-// src/components/Menu/Menu.jsx
 import React, { useEffect, useState } from "react";
 import MenuItemCard from "../components/Menu/MenuItemCard";
 import CategoryFilter from "../components/Menu/CategoryFilter";
@@ -163,8 +162,8 @@ export default function Menu() {
                   onClick={() => setCurrentPage(page)}
                   className={`px-4 py-2 rounded-3xl transition-all font-medium ${
                     currentPage === page
-                      ? "bg-emerald-500 text-gray-900 shadow-lg scale-105"
-                      : "bg-gray-700 hover:bg-emerald-500 text-yellow-100"
+                      ? "bg-yellow-500 text-gray-900 shadow-lg scale-105"
+                      : "bg-gray-700 hover:bg-yellow-400 text-yellow-100"
                   }`}
                 >
                   {page}
@@ -190,12 +189,14 @@ export default function Menu() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4"
+            onClick={() => setQuickViewMeal(null)} // close when clicking outside
           >
             <motion.div
               initial={{ scale: 0.8 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0.8 }}
               className="bg-gray-800 text-gray-100 rounded-3xl overflow-hidden max-w-2xl w-full shadow-2xl relative"
+              onClick={(e) => e.stopPropagation()} // prevent close when clicking inside
             >
               <button
                 onClick={() => setQuickViewMeal(null)}
@@ -220,7 +221,7 @@ export default function Menu() {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-gradient-to-r from-emerald-400 via-yellow-400 to-amber-300 text-gray-900 py-3 px-8 rounded-4xl shadow-lg font-semibold transition-all hover:opacity-90"
+                  className="bg-gradient-to-r from-yellow-400 via-yellow-400 to-amber-300 text-gray-900 py-3 px-8 rounded-4xl shadow-lg font-semibold transition-all hover:opacity-90"
                   onClick={() => {
                     handleAddToCart(quickViewMeal);
                     setQuickViewMeal(null);
